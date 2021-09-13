@@ -11,13 +11,15 @@ Working together can feel extremely intimidating for most people. A friend descr
 
 > Individual devs might actually be the toughest sell. Most people are pretty introverted and pretty anxious about people watching them type at all.
 
-He's right. An ensemble can be an incredibly intimidating idea the first time you encounter it, and it can easily be seen as a waste of time. Because of how easy it is to misunderstand, it is extremely important to be conscious of how the idea is presented and propagated at your organization. It's easiest to start ensemble working if your organization sees it as a supportive environment for rapid problem solving. 
+He's right. Not only can an ensemble be intimidating the first time you encounter it, the time savings aren't always immediately obvious, so it can easily be misinterpreted as incredibly costly too. 
 
-In order to help me remember how to do this, and potentially help others who might be uncertain of where to start, I've compiled a list of things that I did, along with tips and ideas from other experts in the industry. These items and ideas have worked in at least one context, so they may work for you in yours. Feel free to adapt and adjust them to your needs.
+It's easiest to start ensemble working if your organization sees it as a supportive environment for rapid problem solving. 
+
+In order to help my friend, and others who might be uncertain of where to start, I've compiled a list of things that I've done, along with tips and ideas from ensemble-ing experts. These items and ideas have worked in at least one context, so they may work for you in yours, but ymmv. Feel free to adapt and adjust them to your needs.
 
 **Before you start.** Go to a few ensembles, and ensure you understand the basic mechanics of the different roles and rotation times. Take time to [read a book](http://www.mobprogrammingguidebook.com/) or watch some episodes of a [podcast](https://www.youtube.com/channel/UCgt1lVMrdwlZKBaerxxp2iQ) about how and why ensemble working is effective. A new mob behaves entirely differently from one that’s well established. The rigid structure of the roles and timer allows team members to figure out how to make space for each other and fosters dynamics that are simply not possible with solo work. You are going to need to explain the process to your team, so you want a solid basis on how and why mobs work the way they do.
 
-**Socialize the idea of ensemble working.** Look for opportunities to raise awareness about the concept of an ensemble, and how it might benefit your team. Have discussions where you happily listen to other people's opinions on the topic, even if they disagree. If developers and managers have previously been exposed to the idea, and they know you are not dogmatic about it. They’ll be more likely to be curious, and willing to investigate further.
+**Socialize the idea of ensemble working.** Look for opportunities to raise awareness about the concept of an ensemble, and how it might benefit your team. Have discussions where you happily listen to other people's opinions on the topic, even if they disagree. If developers and managers have previously been exposed to the idea, and they know you are not dogmatic about it, they’ll more likely be curious, and interested in asking questions about their assumptions.
 
 How to do this:
 * Share your favourite mobbing articles in your office slack channel ([here's one of my favourites](https://jessitron.com/2021/03/27/those-pesky-pull-request-reviews/))
@@ -26,7 +28,7 @@ How to do this:
 * Share meetups that give their members an opportunity to try out working as an ensemble ([like mine!](https://www.meetup.com/Calgary-Software-Crafters/)) and invite your team members to join you
 * Repeat the above and any other soft introductory steps as you see fit
 
-**Baby Mobs.**  Start facilitating small, low stakes ensembles. This isn’t always easy to do at work, but it's incredibly valuable for socializing mobs further if you can. In order to do this, you need to find something your leadership will find valuable, that is also simple enough that it creates a safe environment for anyone who joins. As these will likely be the first ensembles you’re facilitating, it’s a good idea to keep them small, and only involve people who self-select into the process. I found it took me about 10-15 of these sessions before I was actually comfortable running mobs on production tasks.
+**Baby Mobs.**  Start facilitating small, low stakes ensembles. This isn’t always easy to do at work, but if you can, it's incredibly valuable for socializing mobs further. In order to do this, you need to find something your leadership will find valuable, that is also simple enough that it creates a safe environment for anyone who joins. As these will likely be the first ensembles you’re facilitating, it’s a good idea to keep them small, and only involve people who self-select into the process. I found it took me about 10-15 of these sessions before I was actually comfortable running mobs on production tasks.
 
 Tasks I’ve picked: 
 * Simple refactoring of a piece of code (leadership was on board as this was a KT activity about an area with a deep knowledge silo)
