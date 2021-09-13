@@ -5,7 +5,10 @@ date:   2021-09-01 06:54:00 -0600
 categories: mob programming
 ---
 
-A few days ago, I was talking to a developer I really respect about the challenges he faced introducing the idea of coding as an ensemble in his workplace. Having multiple developers working on the same problem at the same time is a tough sell to a manager or director who's only ever worked or seen work done asynchronously. Aside from convincing his leadership team of the value, he was concerned about gaining traction among the developers he works with.
+Having multiple developers working on the same problem at the same time is a tough sell to a manager or director who's only ever worked or seen work done asynchronously. Aside from convincing leadership of the value, you also need to consider how you'll gain traction among the developers you work with. 
+
+Working together can feel extremely intimidating for most people. A friend described the issue to me when we were talking about how to get ensembles started at his work:
+
 > Individual devs might actually be the toughest sell. Most people are pretty introverted and pretty anxious about people watching them type at all.
 
 He's right. An ensemble can be an incredibly intimidating idea the first time you encounter it, and it can easily be seen as a waste of time. Because of how easy it is to misunderstand, it is extremely important to be conscious of how the idea is presented and propagated at your organization. It's easiest to start ensemble working if your organization sees it as a supportive environment for rapid problem solving. 
