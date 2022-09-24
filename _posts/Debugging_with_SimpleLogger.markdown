@@ -1,8 +1,8 @@
-I’m used to working with the approvaltests library to quickly get legacy code under test for refactoring, but two weeks ago, I had the opportunity to use another tool that comes with approvaltests, called SimpleLogger, which is surprisingly useful. 
+I’m used to working with the ApprovalTests library to quickly get legacy code under test for refactoring, but two weeks ago, I had the opportunity to use another tool that comes with ApprovalTests, called SimpleLogger, which is surprisingly useful. 
 
 I usually join [the Approvaltest.Python mob](https://github.com/approvals/ApprovalTests.Python/blob/main/docs/Contribute.md#join-our-weekly-mobbing-sessions) when I get a chance, but I’d been busy putting together a talk (and hiking!), so I hadn’t been able to attend for almost 6 months. 
 
-Since I had a hackathon at work where I could work on any project I wanted to, I thought it would be a good opportunity to try and make up for all those missed sessions, so I asked Llewellyn if he’d like to spend a few days working on approvaltests. I was really excited when he agreed!
+Since I had a hackathon at work where I could work on any project I wanted to, I thought it would be a good opportunity to try and make up for all those missed sessions, so I asked Llewellyn if he’d like to spend a few days working on ApprovalTests. I was really excited when he agreed!
 
 **_…and then he wanted to work on a LOGGER_** :persevere:
 
@@ -14,11 +14,11 @@ It’s mostly glorified print statements, isn’t it? And if you really need to 
 
 We had a bug that only appeared when our job was run in production, so we had to debug it with logs. I'd just built a bunch of nice methods to log variables and events with SimpleLogger, so I decided to use those methods rather than building my own custom log messages. They add all of the information I care about when debugging an issue. Every log message gets a timestamp, variables can be printed with their types, and lists get expanded so you can see what's inside. 
 
-Seeing the flow of data through my code became a trivial issue, and I saw the bug almost immediately - we were sending the wrong date to a third party service.
+Seeing the flow of data through my code became a trivial issue, and I saw the bug almost immediately - we were sending the wrong list of dates to a third party service. We were only sending a list of two dates (`['2022-09-04', '2022-09-05']`), when we intended to send a list of three (`['2022-09-03','2022-09-04', '2022-09-05']`). This was causing the third party service to send us a valid-looking response that we hadn't anticipated. 
 
 **This is when I fell in LOVE :heart_eyes: with SimpleLogger**
 
-The code that sent the date was buried deep in the application, in a place that was impossible to test without significant refactoring. I needed to fix the issue quickly, but I also didn't have an easy way to verify the change I was about to make would result in the _right_ date being sent. 
+The code that sends the dates is buried deep in the application, in a place that is impossible to test without significant refactoring. I needed to fix the issue quickly, but I also didn't have an easy way to verify the change I was about to make would result in the _right_ date being sent. 
 
 We were under a time crunch, so I was about to make the change, deploy, and pray :pray:. Then I remembered I could use `verify_simple_logger`. 
 
@@ -42,7 +42,7 @@ Then I checked the `test_my_logs.received.txt` file:
 <- out: run_my_job()
 ```
 
-We were only sending a list of two dates (`['2022-09-04', '2022-09-05']`), when we intended to send a list of three (`['2022-09-03','2022-09-04', '2022-09-05']`). This was causing some issues when we processed the response from the third party program that was receiving the dates. I made the change I thought would fix things, and I ran the tests again. The received file showed the change:
+I made the change I thought would fix things, and I ran the tests again. The received file showed the change:
 
 ```
 -> in: run_my_job() in my_batch_job
