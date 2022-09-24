@@ -1,5 +1,3 @@
-# Debugging with SimpleLogger
-
 I’m used to working with the approvaltests library to quickly getting legacy code under test, so I can refactor it, but two weeks ago, I had the opportunity to add another tool, called SimpleLogger, which is surprisingly useful. 
 
 I usually join the Approvaltest.Python mob when I get a chance, but I’d been busy putting together my talk (and hiking!), so I hadn’t been able to attend regularly for almost 6 months. We had a hackathon coming up at work, so I asked Llewellyn if he’d like to spend a few days with me adding any feature he wanted. I was really excited when he agreed!
