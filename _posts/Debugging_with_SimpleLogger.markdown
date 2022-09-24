@@ -59,6 +59,6 @@ It was fixed!!!!  :tada:
 
 I deployed the code, and got things working in production, Then I cleaned up my logs, and I wrote a better test.
 
-**Many times, the code we work with isn't built for testability**
+**A lot of code I encounter isn't built for testability**
 
 We can use things like proveable refactorings and approval testing to get the code to a point where we can test it, but those approaches take time. If I need to fix a bug _now_ I don't necessarily have that time to spare. By allowing me to easily document and verify the flow of data through my application, SimpleLogger allows me to quickly iterate on a fix so that I know it works without having to deploy it.
