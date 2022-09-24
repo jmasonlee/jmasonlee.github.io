@@ -16,7 +16,7 @@ We had a bug that only appeared when our job was run in production, so we had to
 
 Seeing the flow of data through my code became a trivial issue, and I saw the bug almost immediately - we were sending the wrong date to a third party service.
 
-**This is when I fell in LOVE with SimpleLogger**
+**This is when I fell in LOVE :heart_eyes: with SimpleLogger**
 
 The code that sent the date was buried deep in the application, in a place that was impossible to test without significant refactoring. I needed to fix the issue quickly, but I also didn't have an easy way to verify the change I was about to make would result in the _right_ date being sent. 
 
