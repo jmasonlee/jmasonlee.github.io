@@ -1,0 +1,17 @@
+# Debugging with SimpleLogger
+
+I’m used to working with the approvaltests library to quickly getting legacy code under test, so I can refactor it, but two weeks ago, I had the opportunity to add another tool, called SimpleLogger, which is surprisingly useful. 
+
+I usually join the Approvaltest.Python mob when I get a chance, but I’d been busy putting together my talk (and hiking!), so I hadn’t been able to attend regularly for almost 6 months. We had a hackathon coming up at work, so I asked Llewellyn if he’d like to spend a few days with me adding any feature he wanted. I was really excited when he agreed!
+
+…and then he wanted to work on a LOGGER
+
+I am not sure I can convey my disappointment at this point. Logging was… useful, I guess, but also… boring?
+
+It’s mostly glorified print statements, isn’t it? And if you really need to log errors, Python has a default logger built in. So why in the world would a custom logger for approvaltests not be reinventing the wheel?
+
+A day after we created SimpleLogger, I was using it.
+
+What Changed?
+
+SimpleLogger has a magic method, `log_to_string()`. This redirects your logger output from stderr/stdout to a testable output variable that you can verify with approvaltests. It looks like this:
