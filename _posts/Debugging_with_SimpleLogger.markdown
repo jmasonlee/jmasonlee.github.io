@@ -22,7 +22,7 @@ The code that sent the date was buried deep in the application, in a place that 
 
 We were under a time crunch, so I was about to make the change, deploy, and pray :pray:. Then I remembered I could use `verify_simple_logger`. 
 
-This method lets you write tests on your log's output. I already had my logs in place, and they were already showing the buggy behaviour. I wrote a test:
+This method lets you write tests against SimpleLogger's output. I already had my logs in place, and they were already showing the buggy behaviour. I wrote a test:
 
 ```
 def test_my_logs():
