@@ -1,4 +1,4 @@
-I’m used to working with the approvaltests library to quickly get legacy code under test for refactoring, but two weeks ago, I had the opportunity to use another tool, called SimpleLogger, which is surprisingly useful. 
+I’m used to working with the approvaltests library to quickly get legacy code under test for refactoring, but two weeks ago, I had the opportunity to use another tool that comes with approvaltests, called SimpleLogger, which is surprisingly useful. 
 
 I usually join [the Approvaltest.Python mob](https://github.com/approvals/ApprovalTests.Python/blob/main/docs/Contribute.md#join-our-weekly-mobbing-sessions) when I get a chance, but I’d been busy putting together a talk (and hiking!), so I hadn’t been able to attend for almost 6 months. 
 
