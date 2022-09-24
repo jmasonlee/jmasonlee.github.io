@@ -18,15 +18,7 @@ The code that sent the date was buried deep in the application, in a place that 
 
 We were under a time crunch, so I was about to make the change, deploy, and pray. Then I realized approvaltests has a magic method, `verify_simple_logger`. 
 
-This lets you write tests on your log's output. It looks like this:
-
-```
-def test_my_logs():
-    with verify_simple_logger():
-      the_thing_that_makes_the_logs()
-```
-
-I already had my logs in place, and they were already showing the buggy behaviour. I wrote a test:
+This lets you write tests on your log's output. I already had my logs in place, and they were already showing the buggy behaviour. I wrote a test:
 
 ```
 def test_my_logs():
@@ -45,3 +37,4 @@ Then I checked the `test_my_logs.approved.txt` file:
   <- out: send_dates()
 <- out: run_my_job()
 ```
+We needed to be sending a list of dates that included 2022-09-03 too
