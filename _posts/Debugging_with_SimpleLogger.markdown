@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Debugging with SimpleLogger"
+date:   2022-09-25 09:53:00 -0600
+categories: Debugging
+---
 I’m used to working with the ApprovalTests library to quickly get legacy code under test for refactoring, but two weeks ago, I had the opportunity to use another tool that comes with ApprovalTests, called SimpleLogger, which is surprisingly useful. 
 
 I usually join [the Approvaltest.Python mob](https://github.com/approvals/ApprovalTests.Python/blob/main/docs/Contribute.md#join-our-weekly-mobbing-sessions) when I get a chance, but I’d been busy putting together a talk (and hiking!), so I hadn’t been able to attend for almost 6 months. 
