@@ -10,7 +10,7 @@ I usually join [the Approvaltest.Python mob](https://github.com/approvals/Approv
 
 Since I had a hackathon at work where I could work on any project I wanted to, I thought it would be a good opportunity to try and make up for all those missed sessions, so I asked Llewellyn if he’d like to spend a few days working on ApprovalTests. I was really excited when he agreed!
 
-**_…and then he wanted to work on a LOGGER_** :persevere:
+**_…and then he wanted to work on a LOGGER_**
 
 I'm not sure I can accurately convey how dissapointed I was. Logging is… useful, I guess, but also… _boring?_
 
@@ -26,7 +26,7 @@ Seeing the flow of data through my code became a trivial issue, and I saw the bu
 
 The code that sends the dates is buried deep in the application, in a place that is impossible to test without significant refactoring. I needed to fix the issue quickly, but I also didn't have an easy way to verify the change I was about to make would result in the _right_ date being sent. 
 
-We were under a time crunch, so I was about to make the change, deploy, and pray :pray:. Then I remembered I could use `verify_simple_logger`. 
+We were under a time crunch, so I was about to make the change, deploy, and pray. Then I remembered I could use `verify_simple_logger`. 
 
 This method lets you write tests against SimpleLogger's output. I already had my logs in place, and they were already showing the buggy behaviour. I wrote a test:
 
@@ -61,7 +61,7 @@ I made the change I thought would fix things, and I ran the tests again. The rec
 <- out: run_my_job()
 ```
 
-It was fixed!!!!  :tada:
+It was fixed!!!!  
 
 I deployed the code, and got things working in production, Then I cleaned up my logs, and I wrote a better test.
 
