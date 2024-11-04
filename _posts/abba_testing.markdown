@@ -41,7 +41,7 @@ The query should give the following output:
 
 The ABBA test I write while I build this query might look like the following:
 
-```
+```SQL
 CREATE TABLE input as (
   SELECT 1 as number
   UNION
@@ -63,5 +63,26 @@ CREATE TABLE expected_output as (
 );
 
 CREATE TABLE query as (
-  SELECT number, 
+  SELECT
+    number,
+    CASE
+      WHEN ( number % 3 == 0 AND number % 5 == 0 ) THEN 'FizzBuzz'
+      WHEN number % 3 == 0 THEN 'Fizz'
+      WHEN number % 5 == 0 THEN 'Buzz'
+      ELSE CAST(number AS varchar)
+    END as fizzbuzz
+  FROM input
+)
+
+-- First, actual - expected:
+SELECT number, fizzbuzz FROM query
+EXCEPT ALL
+SELECT number, fizzbuzz FROM expected_output
+
+-- Then, expected - actual
+SELECT number, fizzbuzz FROM expected_output
+EXCEPT ALL
+SELECT number, fizzbuzz FROM query
+```
+
 
