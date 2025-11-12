@@ -35,7 +35,7 @@ That’s because culture is more than just a set of practices or stated values. 
 
 
 
-![Diagram of the culture system model]({{ '/assets/lived_culture_model.png' | relative_url }})
+![Diagram of the culture system model]({{ 'assets/lived_culture_model.png' | relative_url }})
 
 It’s tempting to think culture flows in one direction: values lead to principles, which lead to tools that enable desired practices.  
 But reality is a bit messier. Tools reshape practices. Practices reinforce or challenge principles. And, over time, all of that changes what people truly value.
